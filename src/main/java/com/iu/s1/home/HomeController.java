@@ -10,4 +10,13 @@ public class HomeController {
 	public String index() {
 		return "index";
 	}
+	
+	@GetMapping("/admin")
+	public void admin() {
+		System.out.println("Admin User !!!");
+	}
+	
+	public void member() {
+		System.out.println("Member User !!!");
+	}
 }
